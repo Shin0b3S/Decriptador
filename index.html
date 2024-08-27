@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logoAlura" src="/Imagens/logoAlura.png" alt="logo da Alura">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+                  
+            <p>
+                <span>
+                <img src="./Imagens/interrogacao-16px.png" alt="Alerta" width="10px" height="10px"/>
+                </span>
+                <span class="info" style="font-size: 12px">Apenas letras minúsculas e sem acento.</span>
+            </p>
+            
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+            
+        <section>
+            <textarea class="mensagem" cols="20" rows="10"></textarea>
+            <div class="display-texto fade-in">
+                <div class="resultado-texto">
+                  <img class="imagem-conteudo" src="./Imagens/boneco.png" alt="Mensagem Inválida"/>
+                  <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Alura Challenge - Oracle Next Education.</p>
+        <p class="footer__text">Desenvolvido por Ivanildo Ferreira em 26/08/2024.</p>
+      </footer>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
